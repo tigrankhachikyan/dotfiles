@@ -1,0 +1,13 @@
+set default_transaction_read_only=true;
+
+-- require commit/rollback to make changes
+\set AUTOCOMMIT off
+
+-- show nulls as NULL
+\pset null 'NULL'
+
+-- history file for each db
+\set HISTFILE ~/.psql_history- :DBNAME
+
+\set HISTSIZE 5000
+
